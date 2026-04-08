@@ -1,0 +1,19 @@
+name: workflow overview
+
+on:
+  workflow_dispatch:
+
+jobs:
+  my_self_hosted_job:
+    name: my_self_hosted_job
+    runs-on: ubuntu-latest
+    steps:
+      - name: myyamlname
+        id: step_id_1
+        run: echo "this is smth"
+
+      - name: another_name
+        id: step_id_2
+        shell: python
+        run: |
+          print("python shell is running")
