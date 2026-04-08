@@ -7,14 +7,13 @@ jobs:
   my_self_hosted_job:
     name: my_self_hosted_job
     runs-on: ubuntu-latest
-
     steps:
       - name: myyamlname
-        id: stepId1
+        id: step_id_1
         run: echo "this is smth"
 
       - name: another name
-        id: stepId2
+        id: step_id_2
         shell: python
         run: |
           print("python shell is running")
